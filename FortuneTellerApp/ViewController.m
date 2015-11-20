@@ -10,11 +10,29 @@
 
 @interface ViewController ()
 
+
+@property (weak, nonatomic) IBOutlet UIImageView *img1;
+
+
+
+
+
 @end
 
 @implementation ViewController
 
+
+@synthesize img1;
+
+
 - (void)viewDidLoad {
+    
+    UIImage *img1 = [UIImage imageNamed:@"Fortune.jpg."];
+    
+    
+
+    
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }

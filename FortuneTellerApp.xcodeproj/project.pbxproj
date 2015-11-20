@@ -15,6 +15,7 @@
 		76B28AE91BFF8748004AC8DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B28AE71BFF8748004AC8DC /* LaunchScreen.storyboard */; };
 		76B28AF41BFF8748004AC8DC /* FortuneTellerAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B28AF31BFF8748004AC8DC /* FortuneTellerAppTests.m */; };
 		76B28AFF1BFF8748004AC8DC /* FortuneTellerAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B28AFE1BFF8748004AC8DC /* FortuneTellerAppUITests.m */; };
+		76B28B0D1BFFAAFC004AC8DC /* Fortune.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76B28B0C1BFFAAFC004AC8DC /* Fortune.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		76B28AFA1BFF8748004AC8DC /* FortuneTellerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FortuneTellerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B28AFE1BFF8748004AC8DC /* FortuneTellerAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FortuneTellerAppUITests.m; sourceTree = "<group>"; };
 		76B28B001BFF8748004AC8DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76B28B0C1BFFAAFC004AC8DC /* Fortune.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Fortune.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		76B28AD91BFF8748004AC8DC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				76B28B0C1BFFAAFC004AC8DC /* Fortune.jpg */,
 				76B28ADA1BFF8748004AC8DC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76B28AE91BFF8748004AC8DC /* LaunchScreen.storyboard in Resources */,
+				76B28B0D1BFFAAFC004AC8DC /* Fortune.jpg in Resources */,
 				76B28AE61BFF8748004AC8DC /* Assets.xcassets in Resources */,
 				76B28AE41BFF8748004AC8DC /* Main.storyboard in Resources */,
 			);

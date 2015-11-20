@@ -1,25 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask a question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0z-XD-aLI">
+                                <rect key="frame" x="10" y="345" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="i3d-0k-tGb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nB-uQ-oMa">
+                                <rect key="frame" x="137" y="414" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7sb-I6-dCm"/>
+                                    <constraint firstAttribute="width" constant="46" id="dVy-G8-d5q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Ask"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Fortune.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DdJ-Ll-73r">
+                                <rect key="frame" x="25" y="36" width="260" height="260"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DdJ-Ll-73r" firstAttribute="centerX" secondItem="K0z-XD-aLI" secondAttribute="centerX" id="1kU-yR-hrA"/>
+                            <constraint firstItem="K0z-XD-aLI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="39Z-a8-2po"/>
+                            <constraint firstItem="K0z-XD-aLI" firstAttribute="top" secondItem="DdJ-Ll-73r" secondAttribute="bottom" constant="85" id="74W-NG-sr9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0nB-uQ-oMa" secondAttribute="bottom" constant="124" id="B4i-Oq-AhJ"/>
+                            <constraint firstItem="0nB-uQ-oMa" firstAttribute="centerX" secondItem="K0z-XD-aLI" secondAttribute="centerX" id="BaQ-gp-2OH"/>
+                            <constraint firstItem="K0z-XD-aLI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-6" id="O9Y-ry-6EP"/>
+                            <constraint firstItem="DdJ-Ll-73r" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="V0T-7B-HJL"/>
+                            <constraint firstItem="0nB-uQ-oMa" firstAttribute="top" secondItem="K0z-XD-aLI" secondAttribute="bottom" constant="39" id="aU1-ku-wqi"/>
+                            <constraint firstItem="DdJ-Ll-73r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="aWb-ak-xlI"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="img1" destination="DdJ-Ll-73r" id="Dw6-aW-P2c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="162" y="328"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Fortune.jpg" width="556" height="417"/>
+    </resources>
 </document>
